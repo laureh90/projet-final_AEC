@@ -1,0 +1,234 @@
+body {
+  margin: 0px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /**header de chaque section*/
+  /**section poke bowl*/
+  /**section sushi*/
+  /**section salad*/
+  /**section drink*/
+}
+
+#menu p {
+  color: grey;
+  font-weight: bold;
+}
+
+#menu h2 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 80px;
+  margin: 0px;
+}
+
+#menu .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 450px;
+}
+
+#menu .header h2 {
+  margin-top: 50px;
+  background-color: #293726b9;
+  width: 600px;
+}
+
+#menu .header1 {
+  background-image: url("/images/food-photographer-david-fedulov-Sekm9_nC2BM-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#menu .header2 {
+  background-image: url("/images/pexels-valeria-boltneva-684965.jpg");
+  background-position: 60% 70%;
+  background-size: cover;
+}
+
+#menu .header3 {
+  background-image: url("/images/pexels-daria-shevtsova-1580466.jpg");
+  background-position: 60% 70%;
+  background-size: cover;
+}
+
+#menu .header4 {
+  background-image: url("/images/pexels-burst-544961.jpg");
+  background-position: 60% 45%;
+  background-size: cover;
+}
+
+#menu .section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 100px;
+  margin: 60px;
+}
+
+#menu .section1 p:first-child {
+  color: #6d8f66;
+  font-weight: bold;
+}
+
+#menu .section1 p {
+  margin: 0px;
+  width: 250px;
+}
+
+#menu .section1 .bloc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: start;
+}
+
+#menu .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 60px;
+}
+
+#menu .section2 p:first-child {
+  color: #6d8f66;
+  font-weight: bold;
+}
+
+#menu .section2 p {
+  margin: 0px;
+}
+
+#menu .section2 .bloc {
+  width: 100%;
+  margin: 15px;
+  text-align: center;
+}
+
+#menu .section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 60px;
+}
+
+#menu .section3 p:first-child {
+  color: #6d8f66;
+  font-weight: bold;
+}
+
+#menu .section3 p {
+  margin: 0px;
+}
+
+#menu .section3 .bloc {
+  width: 100%;
+  margin: 15px;
+  text-align: center;
+}
+
+#menu .section4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 100px;
+  margin: 60px;
+}
+
+#menu .section4 p:first-child {
+  color: #6d8f66;
+  font-weight: bold;
+}
+
+#menu .section4 p {
+  margin: 0px;
+  width: 250px;
+}
+
+#menu .section4 .bloc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: start;
+}
+
+#menu .footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 350px;
+  background-image: url("/images/rayia-soderberg-ezSFnAFi9hY-unsplash.jpg");
+  background-size: cover;
+  background-position: 60% 70%;
+}
+
+#menu .footer-section img {
+  width: 350px;
+  height: 125px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+#menu .footer-section img:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(-180deg) scale(1.5);
+          transform: rotate(-180deg) scale(1.5);
+}
+/*# sourceMappingURL=styles.css.map */

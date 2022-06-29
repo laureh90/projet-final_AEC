@@ -1,0 +1,11 @@
+diff a/routes/web.php.rej b/routes/web.php.rej	(rejected hunks)
+@@ -0,0 +1,9 @@
++diff a/routes/web.php b/routes/web.php	(rejected hunks)
++@@ -14,6 +14,7 @@
++ */
++ 
++ Route::get('/', function () {
+++    return view('activity');
++ });
++ 
++ Route::get('/dashboard', function () {

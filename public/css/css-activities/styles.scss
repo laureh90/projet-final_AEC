@@ -1,0 +1,475 @@
+body{
+    margin: 0px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+}
+
+$darkgreen:#293726;
+$ligthgreen:#6d8f66;
+$greylink:grey;
+
+:root {
+    --color-light: #6d8f66;
+    --color-black: #293726;
+    --color-bg: #f5f5f5;
+    --color-text: rgb(0, 0, 0);
+}
+
+
+.activities {
+
+// Slider web top
+
+    .slider{
+        padding: 0px 0px 100px 0px;
+        margin: 0px auto;
+        color: #f5f5f5;
+        background-image: url('/images/activities.png') ;
+        background-size: cover;
+        height: 80%;
+        align-items: center;
+        background-position: center bottom;
+        background-size: cover;
+
+        .title {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 0px;
+            padding-top: 120px;
+            color: whitesmoke;
+            font-size: 70px;
+            font-weight: bold;
+            text-shadow: 5px 5px 10px black;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 30px;
+            text-shadow: 5px 5px 20px black;
+
+        }
+
+        button{
+            padding: 15px;
+            border: none;
+            border-radius:5px;
+            background-color: $darkgreen;
+            color: whitesmoke;
+            font-weight: bold;
+            font-size: 30px;
+            box-shadow: 0 1rem 1.25rem 0 $darkgreen,
+            0 -0.25rem 1.5rem $ligthgreen inset,
+            0 0.75rem 0.5rem $ligthgreen inset,
+            0 0.25rem 0.5rem 0 $darkgreen inset;
+            transition:transform 1s ease-in-out;
+        }
+        button:hover{
+            background-color:$darkgreen;
+            color: white;
+            cursor: pointer;
+             transform: scale(1.2);
+        }
+    }
+
+    button{
+
+        padding: 15px;
+        border: none;
+        border-radius:5px;
+        background-color: white;
+        color: $darkgreen;
+        font-weight: bold;
+        font-size:20px;
+        box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    }
+        button:hover{
+            color: #f5f5f5;
+            background-color: $ligthgreen;
+            cursor: pointer;
+        }
+
+// Description
+    .description{
+    padding: 50px 100px 50px 50px;
+
+        h1 {
+            text-align: center;
+            font-size: 50px ;
+            color: #293726;
+        }
+        h2 {color: #6d8f66;}
+
+    }
+
+// Section 3 box : hover
+    .chose {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0px;
+        text-align: center;
+    }
+
+//STAIRWAY
+    .description_stair{
+        text-align: center;
+
+        color: white;
+        padding: 50px 100px 100px 100px;
+        background-color:  $darkgreen;
+        h1 {
+            font-size: 60px;
+            text-shadow: 2px 2px 10px #293726;
+        }
+
+    }
+
+//DISCOVER
+    .discover {
+        text-align: center;
+        color: white;
+        padding: 50px 100px 100px 100px;
+        background-color: $darkgreen;
+        h1 {
+            font-size: 60px;
+            text-shadow: 2px 2px 5px #293726;
+        }
+        h2 {font-size: 25px;}
+
+        p {padding-bottom: 20px;}
+    }
+
+    hr {
+        width: 400px;
+        color: whitesmoke;
+    }
+
+    // GOURMET
+    .gourmet {
+        text-align: center;
+        padding: 50px 100px 100px 100px;
+        color: white;
+        background-color:  $darkgreen;
+
+        h1 {
+            padding: 0px;
+        font-size: 60px;
+        text-shadow: 2px 2px 5px #293726;
+
+        }
+    }
+
+    .section_box {
+        color: var(--color-bg);
+        display: flex;
+        padding: 50px;
+
+        p {
+            color: #4d524c;
+
+        }
+        h1 {
+            font-size: 40px;
+            color: #293726;
+        }
+
+
+    .test_joe{
+        margin: 0px auto;
+        width: 30%;
+
+        h1 {
+            font-size: 60px;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+
+          }
+
+          h2 {
+            font-family: 'Julius Sans One', sans-serif;
+            font-size: 2.5rem;
+          }
+
+          .row {
+            margin-top: 12px;
+          }
+
+          .column {
+            display: inline-block;
+            text-align: center;
+          }
+
+          figure {
+            overflow: hidden;
+          }
+
+          a p {
+              font-size: 30px;
+            color: rgb(255, 255, 255);
+            margin-top: 8px;
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          a:hover {
+            text-decoration: none;
+          }
+
+          .column img {
+            display: block;
+            width: 100%;
+            height: 500px;
+          }
+
+          /*Sepia*/
+          .column#sepia img {
+            -webkit-filter: sepia(100%);
+            filter: sepia(100%);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+          }
+          .column#sepia:hover img {
+            -webkit-filter: sepia(0);
+            filter: sepia(0);
+          }
+
+          /*GrayScale*/
+          .column#grayscale img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+          }
+          .column#grayscale:hover img {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+          }
+
+
+          /*With Simple Caption*/
+          .column#caption {
+            position: relative;
+          }
+          .column#caption .text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 10;
+              opacity: 0;
+              transition: all 0.8s ease;
+          }
+          .column#caption .text h1 {
+              margin: 0;
+              color: white;
+          }
+          .column#caption:hover .text {
+            opacity: 1;
+
+          }
+          .column#caption:hover img {
+            -webkit-filter: sepia(90%);
+          }
+
+          .frame {
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            perspective: 500px;
+          }
+          .frame img {
+            width: 300px;
+            height: 300px;
+          }
+          .frame .details {
+            width: 70%;
+            height: 80%;
+            padding: 5% 8%;
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotateY(90deg);
+            transform-origin: 50%;
+            background: rgba(255,255,255,0.9);
+            opacity: 0;
+            transition: all 0.4s ease-in;
+
+          }
+          .frame:hover .details {
+            transform: translate(-50%, -50%) rotateY(0deg);
+            opacity: 1;
+          }
+        }
+    }
+
+// SECTION DÉTAILS POUR CHAQUE TYPE ACTIVITÉ
+.posts {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+    hr {text-align: left;}
+
+    h3{
+        color: $darkgreen;
+        font-size: 30px;
+    }
+
+    .post_stair {
+        display: flex;
+        height: 400px;
+
+        .left{
+            padding: 50px;
+            width: 50%;
+        }
+
+        .right{
+        width: 50%;
+
+        }
+    }
+
+    .post_shark {
+
+        margin-top: 20px ;
+        display: flex;
+        height: 400px;
+        .left{
+            padding: 50px;
+            width: 50%;
+        }
+
+        .right{
+        width: 50%;
+        // background-image: url('/images/145.jpg');
+        // background-size: cover;
+
+        }
+    }
+
+    .post_aqua {
+        margin-top: 20px ;
+        display: flex;
+        height: 400px;
+
+        .left{
+            padding: 50px;
+            width: 50%;
+        }
+
+        .right{
+        width: 50%;
+
+        }
+    }
+
+    .post_surf {
+
+        margin-top: 20px ;
+        display: flex;
+        height: 400px;
+        .left{
+            padding: 50px;
+            width: 50%;
+        }
+
+        .right{
+        width: 50%;
+        }
+    }
+
+    .post_food1 {
+        margin-top: 20px ;
+        display: flex;
+        height: 400px;
+        .left{
+            padding: 50px;
+            width: 50%;
+        }
+
+        .right{
+        width: 50%;
+        }
+    }
+
+    .post_food2 {
+        margin-top: 20px ;
+        display: flex;
+        height: 400px;
+        .left{
+            padding: 50px ;
+            width: 50%;
+        }
+
+        .right{
+        width: 50%;
+        }
+    }
+
+}
+
+// SECTION POST TOP SLIDER
+.slider_posts{
+    color: #f5f5f5;
+    background-image: url('/images/surf.png') ;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+
+
+        .title {
+            text-align: center;
+            color: whitesmoke;
+            font-size: 150px;
+            font-weight: bold;
+            text-shadow: 5px 5px 10px black;
+            padding-top: 500px;
+            padding-left: 100px;
+        }
+    }
+
+}
+
+// COMMENTAIRE CLIENTS
+    .clients_comment{
+        background-image: url('/images/palmier.jpg') ;
+        color: #f5f5f5;
+        background-size: cover;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        padding: 100px;
+        flex-wrap: wrap;
+
+
+    .box_com{
+            box-shadow: 5px 10px 10px $darkgreen;
+            padding: 50px;
+            background-color: #f5f5f5ef;
+            height: 80%;
+            width: 24%;
+            text-align: center;
+            align-items: center;
+            color: #293726;
+            margin: 20px;
+            flex-wrap: wrap;
+
+        h2 {font-size: 30px;}
+    }
+
+        hr {width: 20%;}
+        h2 {font-size: x-large;}
+    }
+
+
+
+
+

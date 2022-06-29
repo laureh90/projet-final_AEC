@@ -1,0 +1,340 @@
+body{
+    margin:0px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+$darkgreen:#293726;
+$ligthgreen:#6d8f66;
+$greylink:grey;
+
+
+
+
+.header-picture-package-gourmet{
+    .alert{
+
+        background-color: rgba(255, 255, 255, 0.685);
+        border-radius: 5px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.774);
+
+        p{
+            font-size: 30px;
+            color: rgb(148, 23, 23);
+            margin-top: 0px;
+            text-shadow: none;
+        }
+
+        li{
+            font-size: 20px;
+            margin:5px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            padding:10px;
+            list-style-type: none;
+
+        }
+        ul{
+            padding:0px;
+        }
+
+
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    width: 100%;
+    height: 640px;
+    background-image: url('/images/salade1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        flex-wrap: wrap;
+        margin: 25px;
+        color: whitesmoke;
+        font-size: 120px;
+        font-weight: bold;
+        text-shadow: 5px 5px 10px black;
+    }
+
+
+    /**form*/
+    form{
+        display: flex;
+        width: 900px;
+        height: 70px;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.568);
+        padding: 25px;
+        border-radius: 5px;
+        font-size: 20px;
+
+
+        .arrival{
+            label{
+                margin: 10px;
+            }
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            background-color: white;
+            padding: 10px;
+            flex:2;
+
+
+            input[type=date]{
+                outline: none;
+            }
+            input[type=date]:hover{
+
+                cursor: pointer;
+            }
+        }
+        .departure{
+
+            label{
+                margin: 10px;
+            }
+            border: 1px solid black;
+            display: flex;
+            background-color: white;
+            align-items: center;
+            padding: 10px;
+            flex:2;
+
+            input[type=date]{
+                outline: none;
+
+            }
+            input[type=date]:hover{
+
+                cursor: pointer;
+            }
+        }
+        .adult{
+            flex:2;
+            border: 1px solid black;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+
+            label{
+
+                margin: 10px;
+                img{
+                    margin-top: 3px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            input[type=number]{
+                margin-left: 10px;
+                width: 70px;
+
+               padding: 20px;
+                border: none;
+                outline: none;
+
+            }
+
+
+        }
+
+            input[type=submit]{
+                padding: 5px;
+                border: none;
+                background-color: $darkgreen;
+                color: whitesmoke;
+                font-weight: bold;
+                font-size: 15px;
+                box-shadow: 5px 5px 20px rgb(0, 0, 0);
+                flex:2;
+
+            }
+            input[type=submit]:hover{
+                background-color: $ligthgreen;
+                cursor: pointer;
+            }
+    }
+    @media screen and (max-width:1024px) {
+        p{font-size:50px;}
+        button{
+            padding: 5px;
+            border: none;
+            border-radius:5px;
+            background-color: $darkgreen;
+            color: whitesmoke;
+            font-weight: bold;
+            font-size: 15px;
+            box-shadow: 5px 5px 20px rgb(0, 0, 0);
+        }
+
+    }
+}
+
+.main_package-gourmet{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+    width: 100%;
+
+    .description-room-gourmet{
+        display: flex;
+        width:50%;
+        color: whitesmoke;
+        background-image: url("/images/chambre-gourmet.jpg");
+        background-position: -129730px;
+        transition: width 2s;
+        margin-right: 80px;
+
+        &.ouvert{
+            width: 100%;
+         }
+
+
+    .text{
+
+            background-color:#6d8f668c;
+            position: absolute;
+            top: 746px;
+            left: 900px;
+            width: 30%;
+            height: 300px;
+            border: 1px solid rgba(255, 255, 255, 0.89);
+            padding:40px;
+
+
+            p:first-child{
+                text-align: center;
+            }
+            p{
+                font-size: 20px;
+            }
+
+
+            .convenience{
+                display: flex;
+                flex-direction: column;
+                p{font-size: 15px;}
+
+
+            }
+            .price{
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+
+
+            }
+        }
+
+
+        .room1{
+            position: relative;
+            z-index:1000;
+
+            img{
+                width: 850px;
+                height: 500px;
+                box-shadow: 5px 5px 10px black;
+            }
+        }
+
+
+    }
+
+    .description-package{
+        display: flex;
+        width:50%;
+        color: whitesmoke;
+        background-image: url("/images/sushi.jpg");
+        background-position: center;
+        transition: width 2.5s;
+        margin-right: 80px;
+        justify-content: flex-end;
+        margin-top: 60px;
+
+
+        &.ouvert1{
+            width:
+            100%;
+         }
+
+
+
+        .text2{
+            background-color:#293726da;
+            position: absolute;
+            top: 1286px;
+            right:876px;
+            width: 30%;
+            height: 300px;
+            border: 2px solid rgba(255, 255, 255, 0.623);
+            padding:0px 40px 40px 40px;
+
+            p:first-child{
+                text-align: center;
+            }
+            p:nth-child(2){
+                text-align: center;
+                font-size: 20px;
+            }
+            p{
+
+                font-size: 20px;
+
+            }
+
+
+        }
+
+        .room2{
+            position: relative;
+            z-index:1000;
+
+
+            img{
+                width: 850px;
+                height: 500px;
+                box-shadow: -5px -5px  10px black;
+            }
+        }
+        button{
+            padding: 15px;
+            border: 1px solid white;
+            border-radius:5px;
+            background-color: $darkgreen;
+            font-weight: bold;
+            font-size: 25px;
+            box-shadow: 5px 5px 20px rgb(0, 0, 0);
+            width: 100%;
+
+            a{
+                text-decoration: none;
+                color: whitesmoke;
+            }
+        }
+        button:hover{
+            background-color: $ligthgreen;
+            color: whitesmoke;
+            cursor: pointer;
+            a:hover{
+                color: whitesmoke;
+            }
+    }
+    }
+
+
+
+}

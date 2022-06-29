@@ -1,0 +1,47 @@
+diff a/app/Http/Controllers/Auth/RegisteredUserController.php b/app/Http/Controllers/Auth/RegisteredUserController.php	(rejected hunks)
+@@ -51,4 +51,45 @@
+ 
+         return redirect(RouteServiceProvider::HOME);
+     }
++
++    // insciption admin
++    /**
++     * Display the registration admin view.
++     *
++     * @return \Illuminate\View\View
++     */
++    public function AdminCreate()
++    {
++        return view('auth.register-admin');
++    }
++
++    /**
++     * Handle an incoming registration admin request.
++     *
++     * @param  \Illuminate\Http\Request  $request
++     * @return \Illuminate\Http\RedirectResponse
++     *
++     * @throws \Illuminate\Validation\ValidationException
++     */
++    public function AdminStore(Request $request)
++    {
++        $request->validate([
++            'name' => ['required', 'string', 'max:255'],
++            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
++            'password' => ['required', 'confirmed', Rules\Password::defaults()],
++        ]);
++
++        $user = User::create([
++            'name' => $request->name,
++            'email' => $request->email,
++            'category' => 1,
++            'password' => Hash::make($request->password),
++        ]);
++
++        event(new Registered($user));
++
++        Auth::login($user);
++
++        return redirect(RouteServiceProvider::HOME);
++    }
+ }

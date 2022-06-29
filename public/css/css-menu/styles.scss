@@ -1,0 +1,172 @@
+body{
+    margin: 0px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+$darkgreen:#293726;
+$ligthgreen:#6d8f66;
+$greylink:grey;
+
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    p{
+        color:$greylink;
+        font-weight: bold;
+    }
+
+    /**header de chaque section*/
+    h2{
+        text-align: center;
+        color: whitesmoke;
+        font-size: 80px;
+        margin: 0px;
+
+        }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        h2{
+            margin-top: 50px;
+            background-color: #293726b9;
+            width: 600px;
+        }
+    }
+    .header1{
+        background-image: url('/images/food-photographer-david-fedulov-Sekm9_nC2BM-unsplash.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .header2{
+        background-image: url('/images/pexels-valeria-boltneva-684965.jpg');
+        background-position: 60% 70%;
+        background-size: cover;
+    }
+    .header3{
+        background-image: url('/images/pexels-daria-shevtsova-1580466.jpg');
+        background-position: 60% 70%;
+        background-size: cover;
+    }
+    .header4{
+        background-image: url('/images/pexels-burst-544961.jpg');
+        background-position: 60% 45%;
+        background-size: cover;
+    }
+
+
+    /**section poke bowl*/
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    margin: 60px;
+
+    p:first-child{
+        color:$ligthgreen;
+        font-weight: bold;
+    }
+    p{
+        margin: 0px;
+        width: 250px;
+    }
+.bloc{
+    flex: 1 1 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: start;
+}
+
+}
+
+/**section sushi*/
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px;
+    p:first-child{
+        color:$ligthgreen;
+        font-weight: bold;
+    }
+    p{
+
+        margin: 0px;
+    }
+    .bloc{
+        width: 100%;
+        margin: 15px;
+        text-align: center;
+    }
+}
+
+/**section salad*/
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px;
+    p:first-child{
+        color:$ligthgreen;
+        font-weight: bold;
+    }
+    p{
+
+        margin: 0px;
+    }
+    .bloc{
+        width: 100%;
+        margin: 15px;
+        text-align: center;
+    }
+}
+
+/**section drink*/
+.section4{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    margin: 60px;
+
+    p:first-child{
+        color:$ligthgreen;
+        font-weight: bold;
+    }
+    p{
+        margin: 0px;
+        width: 250px;
+    }
+.bloc{
+    flex: 1 1 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: start;
+}
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    background-image: url('/images/rayia-soderberg-ezSFnAFi9hY-unsplash.jpg');
+    background-size: cover;
+     background-position: 60% 70%;
+     img{
+         width: 350px;
+         height: 125px;
+         transform: rotate(-180deg);
+         transition: transform 1s;
+
+     }
+     img:hover{
+        cursor: pointer;
+        transform: rotate(-180deg) scale(1.5);
+
+
+     }
+}
+}

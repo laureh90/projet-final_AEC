@@ -1,0 +1,384 @@
+body {
+  margin: 0px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+.header-picture-package {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 740px;
+  background-image: url("/images/beach.png");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /**form*/
+}
+
+.header-picture-package .alert {
+  background-color: rgba(255, 255, 255, 0.685);
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.774);
+}
+
+.header-picture-package .alert p {
+  font-size: 30px;
+  color: #941717;
+  margin-top: 0px;
+  text-shadow: none;
+}
+
+.header-picture-package .alert li {
+  font-size: 20px;
+  margin: 5px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.header-picture-package .alert ul {
+  padding: 0px;
+}
+
+.header-picture-package p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 25px;
+  color: whitesmoke;
+  font-size: 120px;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px black;
+}
+
+.header-picture-package form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  height: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.568);
+  padding: 25px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.header-picture-package form .arrival {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  background-color: white;
+  padding: 10px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.header-picture-package form .arrival label {
+  margin: 10px;
+}
+
+.header-picture-package form .arrival input[type=date] {
+  outline: none;
+}
+
+.header-picture-package form .arrival input[type=date]:hover {
+  cursor: pointer;
+}
+
+.header-picture-package form .departure {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.header-picture-package form .departure label {
+  margin: 10px;
+}
+
+.header-picture-package form .departure input[type=date] {
+  outline: none;
+}
+
+.header-picture-package form .departure input[type=date]:hover {
+  cursor: pointer;
+}
+
+.header-picture-package form .adult {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  border: 1px solid black;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.header-picture-package form .adult label {
+  margin: 10px;
+}
+
+.header-picture-package form .adult label img {
+  margin-top: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+.header-picture-package form .adult input[type=number] {
+  margin-left: 10px;
+  width: 70px;
+  padding: 20px;
+  border: none;
+  outline: none;
+}
+
+.header-picture-package form input[type=submit] {
+  padding: 5px;
+  border: none;
+  background-color: #293726;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-box-shadow: 5px 5px 20px black;
+          box-shadow: 5px 5px 20px black;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.header-picture-package form input[type=submit]:hover {
+  background-color: #6d8f66;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-picture-package p {
+    font-size: 50px;
+  }
+  .header-picture-package button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #293726;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-box-shadow: 5px 5px 20px black;
+            box-shadow: 5px 5px 20px black;
+  }
+}
+
+.main_package {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
+  width: 100%;
+}
+
+.main_package .description-room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  color: whitesmoke;
+  background-image: url("/images/pexels-pixabay-271643.jpg");
+  background-position: -13520px 70%;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+  margin-right: 80px;
+}
+
+.main_package .description-room.ouvert {
+  width: 100%;
+}
+
+.main_package .description-room .text {
+  background-color: #293726da;
+  position: absolute;
+  top: 900px;
+  left: 900px;
+  width: 30%;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.89);
+  padding: 40px;
+}
+
+.main_package .description-room .text p:first-child {
+  text-align: center;
+}
+
+.main_package .description-room .text p {
+  font-size: 20px;
+}
+
+.main_package .description-room .text .convenience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_package .description-room .text .convenience p {
+  font-size: 15px;
+}
+
+.main_package .description-room .text .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_package .description-room .room1 {
+  position: relative;
+  z-index: 1000;
+}
+
+.main_package .description-room .room1 img {
+  width: 850px;
+  height: 500px;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+}
+
+.main_package .description-package {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  color: whitesmoke;
+  background-image: url("/images/pexels-jess-loiterton-4321569.jpg");
+  -webkit-transition: width 2.5s;
+  transition: width 2.5s;
+  margin-right: 80px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 60px;
+}
+
+.main_package .description-package.ouvert1 {
+  width: 100%;
+}
+
+.main_package .description-package .text2 {
+  background-color: #293726da;
+  position: absolute;
+  top: 1450px;
+  right: 876px;
+  width: 30%;
+  height: 300px;
+  border: 2px solid rgba(0, 0, 0, 0.623);
+  padding: 40px;
+}
+
+.main_package .description-package .text2 p:first-child {
+  text-align: center;
+}
+
+.main_package .description-package .text2 p:nth-child(2) {
+  text-align: center;
+  font-size: 20px;
+}
+
+.main_package .description-package .text2 p {
+  font-size: 20px;
+}
+
+.main_package .description-package .room2 {
+  position: relative;
+  z-index: 1000;
+}
+
+.main_package .description-package .room2 img {
+  width: 850px;
+  height: 500px;
+  -webkit-box-shadow: -5px -5px  10px black;
+          box-shadow: -5px -5px  10px black;
+}
+
+.main_package .description-package button {
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #293726;
+  font-weight: bold;
+  font-size: 25px;
+  -webkit-box-shadow: 5px 5px 20px black;
+          box-shadow: 5px 5px 20px black;
+  width: 100%;
+}
+
+.main_package .description-package button a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.main_package .description-package button:hover {
+  background-color: #6d8f66;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.main_package .description-package button:hover a:hover {
+  color: whitesmoke;
+}
+/*# sourceMappingURL=styles.css.map */

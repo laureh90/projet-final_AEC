@@ -1,0 +1,97 @@
+
+
+  .page_reservation {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    color: #f5f5f5;
+    width: 100%;
+    background-image: url('/images/pexels-kehn-hermano-3668371.jpg') ;
+    background-size: cover;
+    align-items: center;
+
+
+    .header-admin{
+
+        h1{
+            padding-top: 80px;
+            color: white;
+        }
+    }
+
+
+
+    .details {
+
+        display: flex;
+        border-radius: 5px;
+        margin: 0px auto;
+        color: #293726;
+        align-items: center;
+        margin:10px;
+        background-color: #f5f5f5e0;
+        width: 50%;
+        border: 1px solid white;
+        padding:20px;
+        z-index:999;
+
+        p {
+
+            text-align: center;
+            width: 60%;
+           margin:0px;
+            font-size:large;
+            color: #293726 ;
+            z-index:999;
+        }
+        h2{
+            margin:0px;
+             z-index:999;
+        }
+    }
+
+    .button-box{
+        z-index:999;
+    }
+
+
+
+
+}
+
+
+
+@keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

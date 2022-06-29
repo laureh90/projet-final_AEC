@@ -1,0 +1,22 @@
+body{
+    margin: 0px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+}
+
+$darkgreen:#293726;
+$ligthgreen:#6d8f66;
+$greylink:grey;
+
+:root {
+    --color-light: #6d8f66;
+    --color-black: #293726;
+    --color-bg: #f5f5f5;
+    --color-text: rgb(0, 0, 0);
+    --card-width: 200px;
+	--card-height: 300px;
+
+	--card-transition-duration: 800ms;
+	--card-transition-easing: ease;
+}
+

@@ -1,0 +1,421 @@
+body {
+  margin: 0px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+}
+
+.flash {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6D8F66;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  -webkit-box-shadow: 2px 2px 5px #293726;
+          box-shadow: 2px 2px 5px #293726;
+  -webkit-animation: fadeout ease 5s forwards;
+          animation: fadeout ease 5s forwards;
+}
+
+.container .alert {
+  background-color: rgba(255, 255, 255, 0.685);
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.774);
+  text-align: center;
+}
+
+.container .alert li {
+  color: #941717;
+  font-size: 20px;
+  margin: 5px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.container .alert ul {
+  padding: 0px;
+}
+
+.container .header-admin {
+  padding: 50px;
+}
+
+.container .header-admin h1 {
+  text-shadow: 2px 1px 3px black;
+  text-align: center;
+  color: #293726;
+  font-size: 50px;
+  margin: 0px;
+}
+
+.container .header-admin h2 {
+  text-align: center;
+  color: #293726;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.container h3 {
+  padding: 25px;
+  margin-top: 50px;
+  text-align: center;
+  color: #293726;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #dfdfdf;
+}
+
+.container .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+
+.container .button-box .button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  display: FLEX;
+  border: none;
+  border-radius: 5px;
+  background-color: #293726;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  -webkit-box-shadow: 5px 5px 20px black;
+          box-shadow: 5px 5px 20px black;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.container .button-box .button:hover {
+  color: #f5f5f5;
+  background-color: #6d8f66;
+  cursor: pointer;
+}
+
+.container .table {
+  width: 100%;
+  display: table;
+}
+
+.container .table .table-header {
+  display: table-header-group;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container .table .table-header .table-header-cell {
+  background-color: #293726;
+  display: table-cell;
+  padding: 20px 40px 20px 40px;
+  text-align: justify;
+}
+
+.container .table .table-header .list-admin {
+  width: 25%;
+}
+
+.container .table .table-header .list-admin-update {
+  width: 25%;
+}
+
+.container .table .container-form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.container .table .table-body {
+  display: table-row-group;
+}
+
+.container .table .table-body .table-row {
+  table-layout: fixed;
+  width: 50px;
+  display: table-row;
+}
+
+.container .table .table-body .table-row .table-body-cell {
+  color: #293726;
+  background-color: #f5f5f5;
+  display: table-cell;
+  padding: 20px 40px 20px 40px;
+  border-top: 1px solid black;
+}
+
+.container .table .table-body .table-row .table-body-cell .destroy {
+  height: 30px;
+}
+
+.container .table .table-body .table-row .edit, .container .table .table-body .table-row .destroy {
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  text-align: center;
+  width: 25px;
+}
+
+.container .table .table-body .table-row .edit a, .container .table .table-body .table-row .destroy a {
+  color: #4b4b4b;
+  margin-left: 25px;
+}
+
+.container .table .table-body .table-row .edit a:hover, .container .table .table-body .table-row .destroy a:hover {
+  color: #5a1010;
+}
+
+.container .table .table-body .table-row .destroy-reservation a {
+  color: #4b4b4b;
+  margin-left: 25px;
+}
+
+.container .table .table-body .table-row .destroy-reservation a:hover {
+  color: #5a1010;
+}
+
+.container .confirm-retour {
+  padding: 20px;
+  margin: 0px auto;
+}
+
+.container input, .container .champs-textarea {
+  width: 160px;
+  resize: vertical;
+  padding: 15px;
+  margin: 17px;
+  border-radius: 15px;
+  border: 0;
+  -webkit-box-shadow: 4px 4px 10px rgba(12, 12, 12, 0.438);
+          box-shadow: 4px 4px 10px rgba(12, 12, 12, 0.438);
+  height: 35px;
+}
+
+.container input.champs-category, .container .champs-textarea.champs-category {
+  width: 25px;
+  margin: 17px 0px 17px 110px;
+}
+
+.container input.button-submit, .container .champs-textarea.button-submit {
+  padding: 0px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: #293726;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 25px;
+  -webkit-box-shadow: 5px 5px 20px black;
+          box-shadow: 5px 5px 20px black;
+  text-decoration: none;
+}
+
+.container input.champs-textarea, .container .champs-textarea.champs-textarea {
+  margin-top: 30px;
+  height: 150px;
+}
+
+.container .button-submit:hover {
+  color: #f5f5f5;
+  background-color: #6d8f66;
+  cursor: pointer;
+}
+
+.container .admin-name-logout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 10px 40px;
+  font-size: 20px;
+  color: #293726;
+}
+
+.container .admin-name-logout .admin-logout {
+  margin-top: 25px;
+}
+
+.container .admin-name-logout .admin-logout a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 15px 5px 15px;
+  display: FLEX;
+  border: none;
+  border-radius: 5px;
+  background-color: #293726;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  -webkit-box-shadow: 5px 5px 20px black;
+  box-shadow: 5px 5px 20px black;
+  text-decoration: none;
+}
+
+.container .admin-name-logout .admin-logout a:hover {
+  color: #f5f5f5;
+  background-color: #6d8f66;
+  cursor: pointer;
+}
+
+.container .header h2 {
+  padding: 25px;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #293726;
+}
+
+.container .form-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  vertical-align: middle;
+  border: 1px  solid white;
+  border-radius: 25px;
+  background-color: #6d8f6642;
+}
+
+.container .form-menu textarea {
+  vertical-align: middle;
+}
+
+.container .form-menu .champs-category {
+  margin: 0px;
+}
+
+.container .section1, .container .section2, .container .section3, .container .section4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px;
+}
+
+.container .section1 a, .container .section2 a, .container .section3 a, .container .section4 a {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #464545;
+}
+
+.container .section1 a:hover, .container .section2 a:hover, .container .section3 a:hover, .container .section4 a:hover {
+  color: #5a1010;
+}
+
+.container .section1 p:first-child, .container .section2 p:first-child, .container .section3 p:first-child, .container .section4 p:first-child {
+  color: #6d8f66;
+  font-weight: bold;
+}
+
+.container .section1 p, .container .section2 p, .container .section3 p, .container .section4 p {
+  margin: 0px;
+  width: 250px;
+}
+
+.container .section1 .bloc, .container .section2 .bloc, .container .section3 .bloc, .container .section4 .bloc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  border: 1px  solid white;
+  border-radius: 25px;
+  background-color: #6d8f6642;
+}
+
+.container .section1 .bloc .champs-category, .container .section2 .bloc .champs-category, .container .section3 .bloc .champs-category, .container .section4 .bloc .champs-category {
+  text-align: center;
+  margin: 0px;
+}
+
+.container .form-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  vertical-align: middle;
+  border: 1px  solid white;
+  border-radius: 25px;
+  background-color: #6d8f6642;
+}
+
+.container .form-post textarea {
+  vertical-align: middle;
+}
+
+.container .form-post .champs-category {
+  margin: 0px;
+}
+
+.container .form-post .bouton {
+  background-color: #293726;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.container .form-post .bouton:hover {
+  cursor: pointer;
+}
+
+.container .form-admin-update form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .form-guest-update form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

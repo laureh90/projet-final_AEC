@@ -1,0 +1,9 @@
+diff a/public/css/css-admin/style.scss b/public/css/css-admin/style.scss	(rejected hunks)
+@@ -39,7 +39,6 @@
+             font-size: 20px;
+             text-transform: uppercase;
+ 
+-
+         }
+ }
+ 
